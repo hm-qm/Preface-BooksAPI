@@ -1,0 +1,10 @@
+.nav {
+	height: 50px;
+	background: black;
+
+	&__logo {
+		display: flex;
+		color: white;
+		font-size: 2rem;
+	}
+}

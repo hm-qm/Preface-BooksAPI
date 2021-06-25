@@ -1,0 +1,11 @@
+.nav {
+  height: 50px;
+  background: black;
+}
+.nav__logo {
+  display: flex;
+  color: white;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=landing.css.map */
