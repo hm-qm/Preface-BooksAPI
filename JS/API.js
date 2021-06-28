@@ -10,10 +10,12 @@ export const getBooks = async (query, startIndex=0, maxResults=10) => {
     const responsePromise = fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=${startIndex}&maxResults=${maxResults}`);
     const response = await responsePromise;
     const dataJson = await response.json()
-    const bookItems = dataJson.items;
+    const bookItems = dataJson
 
-    console.log(bookItems)
+    console.log(dataJson)
     return bookItems;
 }
 
-getBooks('a thousand splendid')
+getBooks('harry potter')
+
+

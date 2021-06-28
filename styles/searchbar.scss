@@ -1,0 +1,29 @@
+.search-bar__form {
+	width: 50%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--input {
+		width: 100%;
+		height: 50px;
+		border-radius: 10px 0px 0px 10px;
+		border: 2px solid green;
+		padding: 10px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&--btn {
+		color: white;
+		padding: 10px;
+		background: green;
+		height: 100%;
+		border: none;
+		border-radius: 0px 10px 10px 0px;
+		cursor: pointer;
+	}
+}

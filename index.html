@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/landing.css">
     <link rel="stylesheet" href="./styles/searchPage.css">
+    <link rel="stylesheet" href="./styles/searchbar.css">
+
     <title>Preface - Find what unbinds</title>
 </head>
 
@@ -24,10 +26,10 @@
             <div class="Books__search">
                 <div class="Books__search-container">
                     <div class="Books__search-bar">
-                        <form data-search-form>
-                            <input data-search-input class="Books__search-bar--input" type="text"
+                        <form class="search-bar__form" data-search-form>
+                            <input data-search-input class="search-bar__form--input" type="text"
                                 placeholder="search for a book..">
-                            <button data-search-btn class="Books__search-bar--btn">Search</button>
+                            <button data-search-btn class="search-bar__form--btn">Search</button>
                         </form>
                     </div>
                 </div>
@@ -67,6 +69,32 @@
                                 numquam
                                 iste? Molestias dolores blanditiis aspernatur voluptate.</p>
                         </section>
+                        <section class="bookCard">
+                            <div class="image">
+                                <img src="https://www.placecage.com/100/150" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="title">
+                                    <h3>Title</h3>
+                                </div>
+                                <div class="details">
+                                    <span>Author</span>
+                                    <span>Year</span>
+                                </div>
+                                <div class="categories">
+                                    <span>category</span>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus ut.
+                                        Nam consectetur, tempora inventore minus exercitationem asperiores iusto quaerat
+                                        illum sapiente, enim aliquam. Cum odio sapiente commodi dolor quae.</p>
+                                </div>
+                                <div class="buttons">
+                                    <button>More Info</button>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -76,6 +104,8 @@
     </main>
 
     <script type="module" src="./JS/API.js"></script>
+    <script type="module" src="./JS/DOM.js"></script>
+    <script type="module" src="./JS/main.js"></script>
 </body>
 
 </html>
