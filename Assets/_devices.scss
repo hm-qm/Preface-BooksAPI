@@ -24,7 +24,7 @@ $xxl: 1400px;
 }
 
 @mixin laptop {
-	@media only screen and (min-width: $lg + 1px) {
+	@media only screen and (min-width: $lg + 1px) and (max-width: $xl) {
 		@content;
 	}
 }

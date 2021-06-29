@@ -34,8 +34,8 @@ export const constructBookCard = (data, index) => {
     const divImg = `<img src=${data.image}>`;
     const divTitle = `<h3>${data.title}</h3>`;
     const divSubTitle = `<span>${data.authors.join(", ")}</span>\u00A0\u00A0\u00A0<span>${data.publishedDate.slice(0,4)}</span>`;
-    const divCategories = data.categories.map(category => `<span>${category}<span>`).join(" ");
-    const divDescription = `<p>${data.description.replace(/^(.{300}[^\s]*).*/, "$1")}...</p>`;
+    const divCategories = data.categories.map(category => `<span>${category.toLowerCase()}<span>`).join(" ");
+    const divDescription = `<p>${data.description.replace(/^(.{200}[^\s]*).*/, "$1")}...</p>`;
     const divButtons = `<button>More Info</button><button>Buy</button>`;
 
     //Build the initial card section

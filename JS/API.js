@@ -22,7 +22,7 @@ export const searchResults = async (query, startIndex=0, maxResults=10) => {
         preview: book.volumeInfo.previewLink,
         publisher: book.volumeInfo.publisher || "",
         publishedDate: book.volumeInfo.publishedDate || "",
-        categories: book.volumeInfo.categories || [""],
+        categories: book.volumeInfo.categories || ['N/A'],
         image: book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "https://via.placeholder.com/100x150"
     }))
 

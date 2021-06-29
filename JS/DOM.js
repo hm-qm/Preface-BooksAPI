@@ -15,5 +15,6 @@ export const bookDisplay = document.querySelector('[data-display-books');
 
 searchForm.addEventListener('submit', async (e) =>{
     e.preventDefault();
-    await renderSearch(searchInput.value, 0, 20);
+    bookDisplay.innerHTML = '';
+    await renderSearch(searchInput.value, 0, 15);
 });

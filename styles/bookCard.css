@@ -1,0 +1,89 @@
+.bookCard {
+  width: 420px;
+  height: 250px;
+  display: flex;
+  box-shadow: 0px 2px 7px 1px rgba(121, 121, 121, 0.288);
+  border-radius: 30px;
+  font-family: "PT Sans", sans-serif;
+}
+.bookCard__image-container {
+  height: 100%;
+  width: 40%;
+  background: #afd4d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0 30px;
+}
+.bookCard__image-container img {
+  height: 225px;
+  width: 150px;
+  border-radius: 20px;
+}
+.bookCard__detail-container {
+  background: white;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 0px 30px 30px 0px;
+  z-index: 5;
+}
+.bookCard__detail-title {
+  width: 250px;
+  overflow: unset;
+  font-size: 1rem;
+  padding-bottom: 2px;
+}
+.bookCard__detail-subtitle {
+  display: flex;
+  justify-content: flex-start;
+  overflow: unset;
+  padding-bottom: 2px;
+  font-size: 0.8rem;
+}
+.bookCard__detail-subtitle span {
+  padding-right: 20px;
+}
+.bookCard__detail-categories {
+  display: flex;
+  justify-content: space-between;
+  overflow: unset;
+  padding-top: 4px;
+  color: white;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+.bookCard__detail-categories span {
+  background: #222;
+  padding: 1px 1px;
+  border-radius: 3px;
+}
+.bookCard__detail-description {
+  height: 135px;
+  padding-top: 4px;
+  font-size: 0.8rem;
+  font-family: "PT Sans", sans-serif;
+}
+.bookCard__detail-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.bookCard__detail-buttons button {
+  margin: 0px 2px;
+  font-size: 0.7rem;
+  padding: 10px 12px;
+  border: none;
+  background: #2f74c4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bookCard__detail-buttons button:hover {
+  background: #3c81d0;
+}
+
+/*# sourceMappingURL=bookCard.css.map */
