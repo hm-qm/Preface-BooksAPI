@@ -8,6 +8,11 @@ html,
 body {
   width: auto;
   height: 100%;
+  background: #fffef9;
+}
+
+main {
+  height: auto;
 }
 
 /*# sourceMappingURL=base.css.map */
