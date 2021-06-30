@@ -36,7 +36,7 @@ export const constructBookCard = (data, index) => {
     const divSubTitle = `<span>${data.authors.join(", ")}</span>\u00A0\u00A0\u00A0<span>${data.publishedDate.slice(0,4)}</span>`;
     const divCategories = data.categories.map(category => `<span>${category.toLowerCase()}<span>`).join(" ");
     const divDescription = `<p>${data.description.replace(/^(.{200}[^\s]*).*/, "$1")}...</p>`;
-    const divButtons = `<button>More Info</button><button>Buy</button>`;
+    const divButtons = `<button>More Info</button> <a href="${data.link}"><button>Buy</button></a>`;
 
     //Build the initial card section
     const section = [createElement('section', `bookCard`, `${index}`)];

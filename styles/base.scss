@@ -2,6 +2,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "PT Sans", sans-serif;
+	scroll-behavior: smooth;
 }
 
 html,
@@ -9,6 +10,9 @@ body {
 	width: auto;
 	height: 100%;
 	background: #fffef9;
+	background-image: url("../Images/landing_page_flourish.svg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 main {

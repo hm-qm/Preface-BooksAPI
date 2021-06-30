@@ -1,0 +1,41 @@
+.landing {
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__intro {
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&-text {
+			width: 750px;
+		}
+
+		&--heading {
+			font-size: 5rem;
+			background: linear-gradient(45deg, #2a9d8f, #1b4332);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			cursor: default;
+		}
+
+		&--btn {
+			margin-top: 50px;
+			background: #265350;
+			color: white;
+			font-size: 2rem;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 15px;
+			cursor: pointer;
+			transition: background 0.09s ease-in;
+
+			&:hover {
+				background: lighten(#265350, 5%);
+			}
+		}
+	}
+}

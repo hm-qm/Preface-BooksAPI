@@ -37,15 +37,16 @@
 
 		&-title {
 			width: 250px;
-			overflow: unset;
-			font-size: 1rem;
+			padding-right: 5px;
+			font-size: 0.9rem;
 			padding-bottom: 2px;
+			overflow: hidden;
 		}
 
 		&-subtitle {
 			display: flex;
 			justify-content: flex-start;
-			overflow: unset;
+			overflow: hidden;
 			padding-bottom: 2px;
 			font-size: 0.8rem;
 
@@ -65,7 +66,7 @@
 
 			span {
 				background: #222;
-				padding: 1px 1px;
+				padding: 2px 2px;
 				border-radius: 3px;
 			}
 		}

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/landing.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/landingPage.css">
     <link rel="stylesheet" href="./styles/searchPage.css">
     <link rel="stylesheet" href="./styles/searchbar.css">
     <link rel="stylesheet" href="./styles/bookCard.css">
@@ -21,13 +22,26 @@
 <body>
     <header>
         <nav class="nav">
-            <div class="nav__logo">
-                <span>Preface</span>
+            <div class="nav__bar">
+                <a href="#landingPage"><img class="nav__bar--logo" src="./Images/Preface_logo.svg" alt=""></a>
             </div>
         </nav>
     </header>
     <main>
-        <article class="Books">
+        <article>
+            <div id="landingPage" class="landing">
+                <div class="landing__intro">
+                    <div class="landing__intro-text">
+                        <h1 class="landing__intro--heading">Endless books for you to discover.</h1>
+                        <a href="#searchBooks"><button class="landing__intro--btn">Search now</button></a>
+                    </div>
+                    <div class="landing__intro-image">
+                        <img src="./Images/landing_page_vector.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="searchBooks" class="Books">
             <div class="Books__search">
                 <div class="Books__search-container">
                     <div class="Books__search-bar">
@@ -42,44 +56,18 @@
             <div class="Books__display">
                 <div class="Books__display-container">
                     <div data-display-books class="Books__display-grid">
-                        <!-- <section class="bookCardTest">
-                            <div class="image">
-                                <img src="https://www.placecage.com/100/150" alt="">
-                            </div>
-                            <div class="content">
-                                <div class="title">
-                                    <h3>Title</h3>
-                                </div>
-                                <div class="details">
-                                    <span>Author</span>
-                                    <span>Year</span>
-                                </div>
-                                <div class="categories">
-                                    <span>category</span>
-                                </div>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus ut.
-                                        Nam consectetur, tempora inventore minus exercitationem asperiores iusto quaerat
-                                        illum sapiente, enim aliquam. Cum odio sapiente commodi dolor quae.</p>
-                                </div>
-                                <div class="buttons">
-                                    <button>More Info</button>
-                                    <button>Buy</button>
-                                </div>
-                            </div>
-                        </section> -->
                     </div>
                 </div>
             </div>
-
-
+            <div class="footer_note">
+                <p>Designed by Hesham Qasem | 2021</p>
+            </div>
         </article>
     </main>
 
     <script type="module" src="./JS/API.js"></script>
     <script type="module" src="./JS/Utilities.js"></script>
     <script type="module" src="./JS/DOM.js"></script>
-    <script type="module" src="./JS/main.js"></script>
 </body>
 
 </html>

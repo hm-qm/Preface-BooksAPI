@@ -1,5 +1,6 @@
 import * as utilities from './Utilities.js'
 
+// Make API call and return JSON data
 export const getBooks = async (query, startIndex=0, maxResults=10) => {
     const responsePromise = fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=${startIndex}&maxResults=${maxResults}`);
     const response = await responsePromise;
@@ -9,7 +10,7 @@ export const getBooks = async (query, startIndex=0, maxResults=10) => {
     return bookItems;
 }
 
-
+// Clean API JSON data to a more readable object
 export const searchResults = async (query, startIndex=0, maxResults=10) => {
     const rawBookData = await getBooks(query, startIndex, maxResults)
 
@@ -30,7 +31,7 @@ export const searchResults = async (query, startIndex=0, maxResults=10) => {
     return cleanBookData;
 }
 
-
+// Render API call data as card elements
 export const renderSearch = async(query, index=0, maxResults=10) => {
     const results = await searchResults(query, index, maxResults);
 
