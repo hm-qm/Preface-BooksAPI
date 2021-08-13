@@ -1,7 +1,14 @@
 # Preface - Search for Books from the Google Books API
 
+<p>
+    <img src="Images\Preface.png" width="500">
+</p>
+
 <p>The goal of this project was to gain an understanding of REST APIs and working with various incoming data payloads.</p>
 
+<p>
+    <img src="Images\search.png" width="500">
+</p>
 
 ## Project highlights
 
@@ -9,7 +16,6 @@
 - Created methods for cleaning up JSON data and handling data validation
 - Designed an interface layout using figma and then developed it using HTML and SASS with BEM naming convention
 - Added DOM functions to render search results from API as cards that display book cover, descriptions and links
-
 
 ## Tech Stack
 
