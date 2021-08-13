@@ -1,13 +1,13 @@
 # Preface - Search for Books from the Google Books API
 
 <p>
-    <img src="Images\Preface.png" width="500">
+    <img src="Images\Preface.png" width="700">
 </p>
 
 <p>The goal of this project was to gain an understanding of REST APIs and working with various incoming data payloads.</p>
 
 <p>
-    <img src="Images\search.png" width="500">
+    <img src="Images\search.png" width="700">
 </p>
 
 ## Project highlights
